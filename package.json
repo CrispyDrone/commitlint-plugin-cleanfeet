@@ -1,0 +1,23 @@
+{
+  "name": "commitlint-plugin-cleanfeet",
+  "version": "0.1.0",
+  "description": "Adds additional rules to commitlint based on conventional commits' specification.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "commitlint",
+    "commitlintplugin",
+    "conventional-commits"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CrispyDrone/commitlint-plugin-cleanfeet.git"
+  },
+  "author": "CrispyDrone",
+  "license": "ISC",
+  "peerDependencies": {
+    "@commitlint/lint": ">=7.6.0"
+  }
+}
