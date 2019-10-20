@@ -2,7 +2,7 @@
 ## Introduction
 CleanFeet is a plugin extension for [commitlint](https://github.com/conventional-changelog/commitlint), which is a tool for linting commit messages.
 
-If you want to learn more about structured and convention-driven commit messages, see [conventional commits)(https://www.conventionalcommits.org/en/v1.0.0/)
+If you want to learn more about structured and convention-driven commit messages, see [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 ## Rules
 This plugin adds 2 rules:
