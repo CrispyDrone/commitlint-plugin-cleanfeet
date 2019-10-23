@@ -7,11 +7,12 @@ If you want to learn more about structured and convention-driven commit messages
 ## Rules
 This plugin adds 2 rules:
 + `footer-format`: 
-  + This rule determines the format a footer has to adhere to by allowing you to specify a set of regular expressions.
+  + This rule determines the format a single footer line has to adhere to by allowing you to specify a set of regular expressions.
   + The rule passes in case there is no footer.
 + `footer-max-occurrence-breaking-change`:
-  + This rule allows you to specify how many occurrences the footer can contain of `BREAKING CHANGE: <description>`.
+  + This rule allows you to specify how many occurrences the footer can contain of `BREAKING CHANGE: <description>`. You're allowed to pass in your own regex `[2, 'always', [1, /^BREAKING CHANGE: .*$/]]`
   + The rule passes in case there is no footer.
+  + Specifying `never` has no effect.
 
 ## Sample configuration
 ```js
@@ -35,4 +36,3 @@ module.exports = {
 
 ## Todo
 + Show which regular expression has been matched in case of specifying `never` for `footer-format`
-+ Currently `footer-max-occurrences-breaking-change` hasn't been implemented yet
