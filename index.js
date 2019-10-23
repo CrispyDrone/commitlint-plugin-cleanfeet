@@ -7,6 +7,11 @@ module.exports = {
 		return [true];
 	    }
 
+	    if (!value)
+	    {
+		return [false, 'no regexes are specified']
+	    }
+
 	    const new_line = /\n|\r\n|\r(?!\n)/;
 	    const negated = when === 'never';
 	    const report = [true, []];

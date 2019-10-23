@@ -19,5 +19,8 @@
   "license": "ISC",
   "peerDependencies": {
     "@commitlint/lint": ">=7.6.0"
+  },
+  "devDependencies": {
+    "ava": "^2.4.0"
   }
 }

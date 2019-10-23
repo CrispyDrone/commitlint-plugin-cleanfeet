@@ -36,3 +36,4 @@ module.exports = {
 
 ## Todo
 + Show which regular expression has been matched in case of specifying `never` for `footer-format`
++ Write tests
