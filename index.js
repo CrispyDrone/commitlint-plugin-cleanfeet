@@ -9,7 +9,12 @@ module.exports = {
 
 	    if (!value)
 	    {
-		return [false, 'no regexes are specified']
+		return [false, 'no regexes are specified'];
+	    }
+
+	    if (!Array.isArray(value))
+	    {
+		return [false, 'value must be an array'];
 	    }
 
 	    const new_line = /\n|\r\n|\r(?!\n)/;
