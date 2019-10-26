@@ -1,10 +1,10 @@
 {
   "name": "commitlint-plugin-cleanfeet",
   "version": "0.1.0",
-  "description": "Adds additional rules to commitlint based on conventional commits' specification.",
+  "description": "Adds additional rules to commitlint inspired by conventional commits' specification.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "keywords": [
     "commitlint",
