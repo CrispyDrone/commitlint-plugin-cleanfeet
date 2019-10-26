@@ -10,15 +10,15 @@ This plugin adds 2 rules:
   + This rule determines the format a single footer line has to adhere to by allowing you to specify a set of regular expressions.
   + The rule passes in case there is no footer.
 + `footer-max-occurrence-breaking-change`:
-  + This rule allows you to specify how many occurrences the footer can contain of `BREAKING CHANGE: <description>`. You're allowed to pass in your own regex `[2, 'always', [1, /^BREAKING CHANGE: .*$/]]`
+  + This rule allows you to specify how many occurrences the footer can contain of `BREAKING CHANGE: <description>`. You're allowed to pass in your own regex `[2, 'always', { max: 1, regex: /^BREAKING CHANGE: .*$/ }]`
   + The rule passes in case there is no footer.
   + Specifying `never` has no effect.
 
 ## Sample configuration
 ```js
 module.exports = {
-	plugins: ['cleanfeet'],
 	extends: ['@commitlint/config-conventional'],
+	plugins: ['cleanfeet'],
 	rules: {
 		'footer-format': [
 			2, 
@@ -29,11 +29,10 @@ module.exports = {
 				'^[a-zA-Z0-9-]+ #.*'
 			]
 		],
-		'footer-max-occurrence-breaking-change': [2, 'always', 1]
+		'footer-max-occurrence-breaking-change': [2, 'always', { max: 1, regex: /^BREAKING CHANGE: .*$/ }]
 	}
 };
 ```
 
 ## Todo
 + Show which regular expression has been matched in case of specifying `never` for `footer-format`
-+ Write tests
