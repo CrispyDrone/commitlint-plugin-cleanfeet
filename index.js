@@ -1,5 +1,5 @@
-import footer_format from './src/footer-format.js'
-import footer_max_occurrence_breaking_change from './src/footer-max-occurrence-breaking-change.js'
+var footer_format = require('./src/footer-format.js');
+var footer_max_occurrence_breaking_change = require('./src/footer-max-occurrence-breaking-change.js');
 
 module.exports = {
     rules: {
