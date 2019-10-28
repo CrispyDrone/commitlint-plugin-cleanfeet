@@ -33,7 +33,7 @@ module.exports = function(parsed, when, value) {
   {
     breaking_change_regex = RegExp(breaking_change_string);
   }
-  catch
+  catch (e)
   {
     report[0] = false;
     report[1].push(`footer-max-occurrence-breaking-change''s breaking change regex is not valid: ${breaking_change_string}\r\n`);

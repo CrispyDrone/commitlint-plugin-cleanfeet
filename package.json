@@ -1,6 +1,6 @@
 {
   "name": "commitlint-plugin-cleanfeet",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Adds additional rules to commitlint inspired by conventional commits' specification.",
   "main": "index.js",
   "scripts": {
